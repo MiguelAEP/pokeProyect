@@ -5,9 +5,99 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(179, 179, 32, 0.808);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(66, 61, 61) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.card{
+  box-shadow: 1px 1px 5px gray;
+  margin: 5px;
+}
+
+.cards{
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-item{
+  display: flex;
+  padding: 1rem;
+}
+
+.gras{
+  background-color: green;
+}
+
+.water{
+  background-color: skyblue;
+}
+
+.normal{
+  background-color: beige;
+}
+
+.fire{
+  background-color: red;
+}
+.poison{
+  background-color: blueviolet;
+}
+
+.electric{
+  background-color: yellow;
+}
+
+.ground{
+  background-color: rgb(168, 95, 95);
+}
+
+nav{
+  list-style: none;
+  text-decoration: none;
+  
 }
